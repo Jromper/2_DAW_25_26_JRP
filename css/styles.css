@@ -1,0 +1,83 @@
+/* Reset y fuente por defecto */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #f2f2f2; /* fondo neutro claro */
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+body h1 {
+    transition: color 0.5s ease;
+}
+
+/* Contenedor flotante */
+#medio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* fondo claro */
+    padding: 60px 80px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); /* sombra moderna */
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Título */
+#medio h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Botones generales */
+#medio button {
+    margin: 10px;
+    padding: 15px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+/* Hover de los botones */
+#medio button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Tema Claro */
+.cuerpo {
+    background-color: #f2f2f2; /* fondo general claro */
+    color: #333333;
+}
+
+.cuerpo h1 {
+    color: #222222;
+}
+
+.boton {
+    background-color: #4a90e2; /* azul suave */
+    color: #ffffff;
+}
+
+/* Tema Oscuro */
+.cuerpo2 {
+    background-color: #1e1e2f; /* fondo oscuro elegante */
+    color: #ffffff;
+}
+
+.cuerpo2 h1 {
+    color: #333333;
+}
+
+.boton2 {
+    background-color: #f39c12; /* naranja cálido */
+    color: #1e1e2f; /* contraste sobre fondo oscuro */
+}
